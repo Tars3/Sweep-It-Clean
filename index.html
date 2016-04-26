@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Captain Planet</title>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+
+<center>
+<div class="hat">
+
+<!-- <div id="container-main"> -->
+<div class="title">Sweep It Clean!</div>
+
+<div class="level">Level 1</div>
+
+<div id="clock">15</div>
+<script>
+var clock = 15
+var interval = setInterval(function () {
+    clock--
+    document.getElementById('clock').innerHTML = clock
+}, 1000)
+setTimeout(function () {
+  $('.main-game').addClass('main-game-end-lose');
+    clearInterval(interval)
+}, 15000)
+
+</script>
+
+<div id="container">
+  <div class="sound-btn">pause</div>
+  <div class="sound-btn">play</div>
+</div>
+<div id="nav-instuck">Find 5 Recyclables</div>
+
+<!-- </div> -->
+
+
+<div id="bar">
+  <div class="round1"></div>
+  <div class="round"></div>
+  <div class="round"></div>
+  <div class="round"></div>
+  <div class="round"></div>
+</div>
+
+
+<div id="box1" class="grid-game1">
+  <img src="images/R_bottles.png" alt="bottle" width="100%" height="100%">
+</div>
+<div id="box2" class="grid-game">
+  <img src="images/NR_applecore.png" alt="apple" width="100%" height="100%">
+</div>
+<div id="box3" class="grid-game2">
+  <img src="images/R_newspaper.png" alt="newspaper" width="100%" height="100%">
+</div>
+<div id="box4" class="grid-game">
+  <img src="images/NR_flattire.png" alt="tires" width="100%" height="100%">
+</div>
+<div id="box5" class="grid-game3">
+  <img src="images/R_cardboard.png" alt="cardboard" width="100%" height="100%">
+</div>
+<div id="box6" class="grid-game">
+  <img src="images/NR_lightbulb.png" alt="lightbulb" width="100%" height="100%">
+</div>
+<div id="box7" class="grid-game">
+  <img src="images/NR_motoroil.png" alt="oil" width="100%" height="100%">
+</div>
+<div id="box8" class="grid-game4">
+  <img src="images/R_can.png" alt="can" width="100%" height="100%">
+</div>
+<div id="box9" class="grid-game">
+  <img src="images/NR_paintcan.png" alt="paintcan" width="100%" height="100%">
+</div>
+<div id="box10" class="grid-game">
+  <img src="images/NR_fastfood.png" alt="fastfood" width="100%" height="100%">
+</div>
+<div id="box11" class="grid-game">
+  <img src="images/NR_clothing.png" alt="clothing" width="100%" height="100%">
+</div>
+<div id="box12" class="grid-game5">
+  <img src="images/R_paperbag.png" alt="paperbag" width="100%" height="100%">
+</div>
+</div>
+</center>
+<div class="main-game">
+</div>
+
+<!-- <div class="letsPlayMain">
+  <div class="titleOfGame">Finish Line Dash</div>
+  <div class="letsPlay">Lets play!
+    <div class="startBtn">PLAY NOW!</div>
+  </div>
+</div>
+ -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
